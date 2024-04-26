@@ -15,7 +15,8 @@ export enum Tutorial {
 const tutorialHandlers = {
   [Tutorial.Intro]: (scene: BattleScene) => {
     return new Promise<void>(resolve => {
-      scene.ui.showText(`Welcome to PokéRogue! This is a battle-focused Pokémon fangame with roguelite elements.
+      scene.ui.showText(`Welcome to VtubRogue ! This is a battle-focused Vtuber fangame with roguelite elements.
+                        $This game is a fork of PokéRogue, please support the original game first. (https://pokerogue.net/)
                         $This game is not monetized and we claim no ownership of Pokémon nor of the copyrighted assets used.
                         $The game is a work in progress, but fully playable.\nFor bug reports, please use the Discord community.
                         $If the game runs slowly, please ensure 'Hardware Acceleration' is turned on in your browser settings.`, null, () => resolve(), null, true);
